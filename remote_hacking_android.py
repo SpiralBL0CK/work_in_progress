@@ -7,6 +7,7 @@ print var1
 end
 https://stackoverflow.com/questions/13935443/gdb-scripting-execute-commands-at-selected-breakpoint
 https://stackoverflow.com/questions/24505821/how-to-call-malloc-in-androids-ndk-gdb
+https://glandium.org/blog/?p=2848
 """
 import socket
 import os
