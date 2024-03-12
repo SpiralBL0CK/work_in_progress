@@ -1,3 +1,13 @@
+"""
+info symbol malloc
+x (void (*)(size_t))(0x7ffff7df07a0)(4)
+break someFunction
+commands
+print var1
+end
+https://stackoverflow.com/questions/13935443/gdb-scripting-execute-commands-at-selected-breakpoint
+https://stackoverflow.com/questions/24505821/how-to-call-malloc-in-androids-ndk-gdb
+"""
 import socket
 import os
 import time
