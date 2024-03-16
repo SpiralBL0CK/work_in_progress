@@ -29,3 +29,4 @@ off_2B5E80(we call binder server so like the actuall impelementation of the serv
 
 So conclusion that upper thing was useless
 we need to actually understand wpas_hidl_init which internally uses android::hardware::wifi::supplicant::V1_3::implementation::HidlManager::registerHidlService
+now wpas_hidl_init is used in wpas_notify_supplicant_initialized
