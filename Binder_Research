@@ -32,3 +32,20 @@ we need to actually understand wpas_hidl_init which internally uses android::har
 now wpas_hidl_init is used in wpas_notify_supplicant_initialized
 wpas_hidl_init used in wpas_notify_supplicant_initialized 
 wpa_supplicant_init in main
+
+================================
+Remote research
+
+wpa_driver_nl80211_driver_cmd_cfi->wpa_drv_driver_cmd
+wpa_drv_driver_cmd->wpa_supplicant_event
+
+wpa_supplicant_event->probably callback
+
+process_glboal_event,send_scan_event,cpmmect+,;,e
+
+
+wpa_supplicant_event->process_glboal_event
+
+wpa_supplicant_event-> does ipc initialisation and no point into further investigation.
+
+send_scan_event-> this waits after a scan(802.11 scan) and than talks to wpa_supplicant_event
