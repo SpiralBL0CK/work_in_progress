@@ -49,3 +49,15 @@ wpa_supplicant_event->process_glboal_event
 wpa_supplicant_event-> does ipc initialisation and no point into further investigation.
 
 send_scan_event-> this waits after a scan(802.11 scan) and than talks to wpa_supplicant_event
+
+mlme_event_assoc->1state machine step=>mlme_event->process_bss_event_cfi->nl80211_init_bss->wpa_driver_nl80211_drv_init/wpa_driver_nl80211_if_add_cfi
+
+
+==============
+wpa_supplicant_driver_cmd=>wpa_supplicant_ctrl_iface_process=>wpa_supplicant_global_ctrl_iface_process(ipc)
+wpa_supplicant_ctrl_iface_receive_cfi->wpa_supplicant_ctrl_iface_receive->wpas_ctrl_iface_open_sock->init/receive/send->reload_config
+->wpa_supplicant_ctrl_iface_process
+wpa_supplicant_global_ctrl_iface_init->main
+
+
+mlme_event->auth4th state machine step
